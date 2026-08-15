@@ -95,6 +95,8 @@ function playRound(humanChoise, computerChoise) {
 }
 
 function startGame() {
+    humanScore = 0;
+    computerScore = 0;
     let isGameCancelled = false;
 
     for (i = 0; i < 5; i++) {
