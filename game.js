@@ -93,35 +93,3 @@ function playRound(humanChoise, computerChoise) {
     }
 
 }
-
-function startGame() {
-    humanScore = 0;
-    computerScore = 0;
-    let isGameCancelled = false;
-
-    for (i = 0; i < 5; i++) {
-        let humanChoise = getHumanChoise(i);
-        let computerChoise = getComputerChoise();
-
-        if (humanChoise === "none") {--i};
-        if (!humanChoise) {
-            alert("You cancel the game.");
-            isGameCancelled = true;
-            break;
-        }
-
-        playRound(humanChoise, computerChoise);
-    }
-
-    if (isGameCancelled === false) {
-        if (humanScore === computerScore) {
-            winnerAlert("PARRY! There is no winners.")
-        }
-        if (humanScore < computerScore) {
-            winnerAlert("YOU LOSE! Don't worry, it's random anyway.")
-        }
-        if (humanScore > computerScore) {
-            winnerAlert("YOU WIN! Congratulations!")
-        }
-    }
-}
