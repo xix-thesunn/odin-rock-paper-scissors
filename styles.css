@@ -6,14 +6,48 @@
 }
 
 button {
-    background-color: silver;
-    font-size: 24px;
+    background-color: hsl(0, 0%, 55%);
+    border-style: none;
+    padding: 15px;
+    border-radius: 10px;
 }
+
+button:hover {
+    background-color: hsl(0, 0%, 45%);;
+}
+
+.choiseButtons button {
+    font-size: 60px;
+}
+
 
 h1 {
     color: white;
 }
 
-p {
+div, p {
     color: silver;
+}
+
+.commentator {
+    font-size: 28px;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    justify-self: center;
+}
+
+.winState {
+    color: #4cdf4c;
+}
+
+.failState {
+    color: #ec2d2d;
+}
+
+.winnerAnnouncer {
+    font-size: 48px;
 }
